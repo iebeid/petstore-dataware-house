@@ -1,0 +1,40 @@
+--Q1 Display sale amount of animals by season by employee.
+select {[Fall 2010]:[winter 2010]} on columns,
+[Dim Employee].[Title Hierarchy].[Employee] on rows
+from [SSAS_term_project_0421_2_cube]
+where [Measures].[Amount Of Animal Sales]
+
+--Q2 Display the highest, lowest, and average total sale amount with tax by employee.
+with member [Measures].[the highest total of sales with taxes] as
+   MAX([Dim Employee].[Title Hierarchy].[Employee] ,[Measures].[Total Sales Taxed])
+     member [Measures].[the lowest total of sales with taxes] as
+   MIN([Dim Employee].[Title Hierarchy].[Employee], [Measures].[Total Sales Taxed])    
+     member [Measures].[the average total of sales with taxes] as
+   AVG([Dim Employee].[Title Hierarchy].[Employee], [Measures].[Total Sales Taxed])
+
+select {[the highest total of sales with taxes],[the lowest total of sales with taxes],
+[the average total of sales with taxes]} on columns
+from [SSAS_term_project_0421_2_cube]
+
+--Q3 Find the top three cutomers with the highest total sale amount.
+SELECT TOPCOUNT([Dim Customer].[Customer Hierarchy].[Customer], 3, [Measures].[Total Sales]) ON columns
+FROM [SSAS_term_project_0421_2_cube]
+WHERE [Measures].[Total Sales]
+
+--Q4 Display shipping cost by supplier by month of May, June, and August of 2010.
+select ([Measures].[Shipping Cost],{[May 2010],
+[June 2010],[August 2010]}) on columns, 
+[Dim Supplier].[Supplier Hierarchy].[Supplier] on rows
+from [SSAS_term_project_0421_2_cube]
+
+--Q5 Which season has total order amount larger than its preceding season?
+SELECT [Measures].[Order Amount] on columns,
+FILTER({[Dim Time].[Season].MEMBERS - [Dim Time].[Season].[All]}, [Order Amount] > 
+([Order Amount], [Time Hierarchy].CurrentMember.PrevMember)) ON rows
+FROM [SSAS_term_project_0421_2_cube]
+
+
+
+
+
+

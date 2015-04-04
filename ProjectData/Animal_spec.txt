@@ -1,0 +1,11 @@
+Field Name	Start	Width
+AnimalID	1	5
+Name		6	10
+Category	16	10
+Breed		26	20
+DateBorn	46	20
+Gender		66	10
+Registered	76	5
+Color		81	15
+SaleID		96	5
+Donation	101	21

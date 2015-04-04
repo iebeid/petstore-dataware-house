@@ -1,0 +1,82 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>SSAS_term_project_04</Database>
+    <Server>localhost</Server>
+    <ConnectionString>DataSource=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>1S74mUKxnh2nFoSYEohadv2EYr4=4/21/2013 7:22:45 PM4/21/2013 7:22:45 PM</TimeStamp>
+        <ID>
+          <String>SSAS_term_project_0421_2_ds</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>ra/CfPYYULV2QjbC0Zl9Kz9NdgQ=4/21/2013 7:24:02 PM4/21/2013 7:23:19 PM</TimeStamp>
+        <ID>
+          <String>SSAS_term_project_0421_2_ds_view</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>gV5dKUad1imvkje2RQf6Ccain28=4/22/2013 1:04:13 PM4/21/2013 7:24:38 PM</TimeStamp>
+        <ID>
+          <String>Dim Employee</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>yJ7VsuXUodk5A1Tew0sECznrvcM=4/22/2013 1:04:13 PM4/21/2013 7:24:38 PM</TimeStamp>
+        <ID>
+          <String>Dim Customer</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>m2QVRIYvmrbZEizCXEqN0nuyF88=4/22/2013 1:04:13 PM4/21/2013 7:24:38 PM</TimeStamp>
+        <ID>
+          <String>Dim Supplier</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>+MYJ3Ju8a6GXVO69fAdiUAbQZ5Y=4/22/2013 1:05:05 PM4/21/2013 7:26:07 PM</TimeStamp>
+        <ID>
+          <String>Dim Time</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>pHFD9Rn/u+DJjiGgBBimr1NYK40=4/22/2013 12:58:56 PM4/21/2013 7:24:38 PMADraNa0B2nuo2NVRCYblroFc1r4=4/21/2013 7:24:38 PM4/21/2013 7:24:38 PM</TimeStamp>
+        <ID>
+          <String>SSAS_term_project_0421_2_cube</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>EMxorlvBRFjOs1kN4BGbgsB1WjA=4/21/2013 7:22:05 PM4/21/2013 7:22:05 PM</TimeStamp>
+      <ID>
+        <String>SSAS_term_project_04</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2013-04-22T18:06:35.83Z</LastDeployed>
+</DeploymentSnapshot>

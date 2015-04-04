@@ -1,0 +1,8 @@
+"Bird",
+"Cat","CFA"
+"Dog","AKC"
+"Fish",
+"Mammal","Misc"
+"Other","Unknown"
+"Reptile",
+"Spider",
